@@ -16,6 +16,10 @@
 		2961448B29CC9DBB00066E26 /* Simple_TODO_listTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2961448A29CC9DBB00066E26 /* Simple_TODO_listTests.swift */; };
 		2961449529CC9DBB00066E26 /* Simple_TODO_listUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2961449429CC9DBB00066E26 /* Simple_TODO_listUITests.swift */; };
 		2961449729CC9DBB00066E26 /* Simple_TODO_listUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2961449629CC9DBB00066E26 /* Simple_TODO_listUITestsLaunchTests.swift */; };
+		296144A529CC9EF300066E26 /* ToDoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296144A429CC9EF300066E26 /* ToDoListView.swift */; };
+		296144A729CC9F1F00066E26 /* ToDoListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296144A629CC9F1F00066E26 /* ToDoListModel.swift */; };
+		2984826B29DAC32900E44880 /* MySettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2984826A29DAC32900E44880 /* MySettingsView.swift */; };
+		2984826D29DAC33F00E44880 /* MySettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2984826C29DAC33F00E44880 /* MySettingsModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,10 @@
 		2961449029CC9DBB00066E26 /* Simple TODO listUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Simple TODO listUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2961449429CC9DBB00066E26 /* Simple_TODO_listUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simple_TODO_listUITests.swift; sourceTree = "<group>"; };
 		2961449629CC9DBB00066E26 /* Simple_TODO_listUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simple_TODO_listUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		296144A429CC9EF300066E26 /* ToDoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListView.swift; sourceTree = "<group>"; };
+		296144A629CC9F1F00066E26 /* ToDoListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListModel.swift; sourceTree = "<group>"; };
+		2984826A29DAC32900E44880 /* MySettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySettingsView.swift; sourceTree = "<group>"; };
+		2984826C29DAC33F00E44880 /* MySettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySettingsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +106,8 @@
 		2961447329CC9DB800066E26 /* Simple TODO list */ = {
 			isa = PBXGroup;
 			children = (
+				2984826929DAC30400E44880 /* mySettings */,
+				296144A329CC9EAC00066E26 /* todo */,
 				2961447429CC9DB800066E26 /* Simple_TODO_listApp.swift */,
 				2961447629CC9DB800066E26 /* ContentView.swift */,
 				2961447829CC9DBB00066E26 /* Assets.xcassets */,
@@ -131,6 +141,24 @@
 				2961449629CC9DBB00066E26 /* Simple_TODO_listUITestsLaunchTests.swift */,
 			);
 			path = "Simple TODO listUITests";
+			sourceTree = "<group>";
+		};
+		296144A329CC9EAC00066E26 /* todo */ = {
+			isa = PBXGroup;
+			children = (
+				296144A429CC9EF300066E26 /* ToDoListView.swift */,
+				296144A629CC9F1F00066E26 /* ToDoListModel.swift */,
+			);
+			path = todo;
+			sourceTree = "<group>";
+		};
+		2984826929DAC30400E44880 /* mySettings */ = {
+			isa = PBXGroup;
+			children = (
+				2984826A29DAC32900E44880 /* MySettingsView.swift */,
+				2984826C29DAC33F00E44880 /* MySettingsModel.swift */,
+			);
+			path = mySettings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,10 +291,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2984826D29DAC33F00E44880 /* MySettingsModel.swift in Sources */,
 				2961447E29CC9DBB00066E26 /* Persistence.swift in Sources */,
+				2984826B29DAC32900E44880 /* MySettingsView.swift in Sources */,
+				296144A729CC9F1F00066E26 /* ToDoListModel.swift in Sources */,
 				2961447729CC9DB800066E26 /* ContentView.swift in Sources */,
 				2961447529CC9DB800066E26 /* Simple_TODO_listApp.swift in Sources */,
 				2961448129CC9DBB00066E26 /* Simple_TODO_list.xcdatamodeld in Sources */,
+				296144A529CC9EF300066E26 /* ToDoListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
